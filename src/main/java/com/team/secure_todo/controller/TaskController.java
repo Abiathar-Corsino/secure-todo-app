@@ -40,4 +40,3 @@ public class TaskController {
         return taskRepository.save(task);
     }
 }
-
