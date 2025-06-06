@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>My Tasks</title>
+</head>
+<body>
+<h1>Hello, <span th:text="${userEmail}"></span>!</h1>
+<h2>Your Tasks</h2>
+<form method="post" action="/api/tasks">
+    <input type="text" name="title" placeholder="What to do?"/>
+    <input type="text" name="description" placeholder="Details"/>
+    <button type="submit">Add Task</button>
+</form>
+<ul>
+    <li th:each="task : ${tasks}">
+        <span th:text="${task.title + ': ' + task.description}"></span>
+    </li>
+</ul>
+<a href="/logout">Logout</a>
+</body>
+</html>
