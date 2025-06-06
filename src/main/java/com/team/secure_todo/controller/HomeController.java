@@ -1,8 +1,8 @@
 package com.team.secure_todo.controller;
 
-import com.team.secure_todo.model.User;
-import com.team.secure_todo.repository.TaskRepository;
-import com.team.secure_todo.repository.UserRepository;
+import com.example.securetodo.model.User;
+import com.example.securetodo.repository.TaskRepository;
+import com.example.securetodo.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
